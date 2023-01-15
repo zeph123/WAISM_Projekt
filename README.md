@@ -36,12 +36,14 @@ Wytwarzanie aplikacji internetowych sterowane modelami
     6. Programowanie obiektowe (Classes & Value Types, Overloading, Inheritance and Overriding)
     7. Wielowątkowość (Threads)
     8. *Obsługa błędów (Errors)
-    9. *Types and Namespaces
-    10. *Types as Values
+    9. *Typy i przestrzenie nazw (Types and Namespaces)
+    10. *Typy jako wartości (Types as Values)
 3. Translacja wybranych elementów składni z Emojicode do C++
 4. Przykładowy dłuższy program
 
-### Podział pracy
+Oznaczone * - Dodatkowe
+
+### Podział pracy:
 
 * Adam Lipiński - 1, 2.6
 * Zygmunt Łata - 2.1, 2.3, 2.7
