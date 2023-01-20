@@ -1,0 +1,62 @@
+💭 Składnia języka Emojicode - Podstawy
+
+💭 Przykładowy program 3
+
+🏁 🍇
+
+    😀 🔤 Cześć, jestem programem 3. 🔤 ❗️
+
+    💭 Obliczenie sumy liczb całkowitych bez użycia funkcji
+
+    💭🔜
+        Deklaracja zmiennej suma jako zmiennej modyfikowalnej
+        Będzie ona przechowywać sumę dwóch argumentów
+        Przypisanie zmiennej wartości 0
+    🔚💭
+    0 ➡️ 🖍🆕 suma
+
+    💭 Deklaracja stałych zmiennych liczb całkowitych
+    1 ➡️ a
+    5 ➡️ b
+
+    💭 Operacja sumowania argumentów 
+    suma ⬅️➕ a
+    suma ⬅️➕ b
+
+    😀 🔤 Obliczenia wykonane bez użycia funkcji 🔤 ❗️
+    😀 🔤 Suma wyrażenia: 🧲 a 🧲 + 🧲 b 🧲 = 🧲 suma 🧲🔤 ❗️
+
+    
+    💭🔜
+        Funkcja obliczająca sumę
+        Funkcja przyjmuje 2 argumenty: a, b - liczby całkowite
+    🔚💭
+    🍇 a 🔢 b 🔢 ➡️ 🔢
+
+        💭🔜
+        Deklaracja zmiennej suma jako zmiennej modyfikowalnej
+        Będzie ona przechowywać sumę dwóch argumentów
+        Przypisanie zmiennej wartości 0
+        🔚💭
+        0 ➡️ 🖍🆕 suma
+
+        💭 Operacja sumowania argumentów 
+        suma ⬅️➕ a
+        suma ⬅️➕ b
+
+        💭 Zwrócenie zmiennej suma
+        ↩️ suma
+    
+    💭 Nazwanie funkcji
+    🍉 ➡️ obliczSume
+
+    😀 🔤 Obliczenia wykonane za pomocą funkcji - obliczSume(a,b) 🔤 ❗️
+
+    😀 🔤 Suma wyrażenia: 1 + 2 = 🧲 ⁉️ obliczSume 1 2 ❗️ 🧲🔤 ❗️
+
+    1 ➡️ a2
+    3 ➡️ b2
+
+    😀 🔤 Suma wyrażenia: 🧲 a2 🧲 + 🧲 b2 🧲 = 🧲 ⁉️ obliczSume a2 b2 ❗️ 🧲🔤 ❗️
+
+🍉
