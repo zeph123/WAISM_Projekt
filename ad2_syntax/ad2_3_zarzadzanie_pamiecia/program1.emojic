@@ -1,0 +1,29 @@
+💭 Składnia języka Emojicode - Zarządzanie pamięcią
+
+💭 Przykładowa klasa - Ryba
+
+🐇 🐟 🍇
+
+    🖍🆕 nazwa 🔡
+    🖍🆕 rodzaj 🔡
+
+    🆕 🍼 nazwa 🔡 🍼 rodzaj 🔡 🍇
+        😀 🔤 Wywołanie konstruktora 🔤❗️
+    🍉
+
+    ❗️ 📙 🍇
+        😀 🔤 Ryba 🔤❗️
+        😀 🔤 Nazwa: 🧲nazwa🧲 🔤 ❗️
+        😀 🔤 Rodzaj: 🧲rodzaj🧲 🔤❗️
+    🍉
+
+    ♻️ 🍇
+        😀 🔤 Wywołanie destruktora 🔤❗️
+    🍉
+
+🍉
+
+🏁 🍇
+    🆕🐟 🔤Okoń🔤 🔤Słodkowodny🔤 ❗ ➡️ fish
+    📙 fish ❗️
+🍉

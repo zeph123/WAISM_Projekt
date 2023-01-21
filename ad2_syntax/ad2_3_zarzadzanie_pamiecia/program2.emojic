@@ -1,0 +1,52 @@
+💭 Składnia języka Emojicode - Zarządzanie pamięcią
+
+💭 Przykładowy przypadek referencji cyklicznej
+💭 Wraz ze sposobem jej obejścia:
+💭 - zastosowanie słabej referencji w jednym z obiektów
+
+🐇 🙍 🍇
+
+    🖍🆕 pies 🐶
+
+    🆕 🍼 pies 🐶 🍇
+        😀 🔤 Wywołanie konstruktora - Człowieka 🔤❗️
+        👇 ➡️ 🙍pies ❗️
+    🍉
+
+    ♻️ 🍇
+        😀 🔤 Wywołanie destruktora - Człowieka 🔤❗️
+    🍉
+
+🍉
+
+🐇 🐶 🍇
+
+    💭 poprzednio występowała referencja cykliczna
+    💭 🖍🆕 czlowiek 🍬🙍
+
+    💭 zastosowanie słabej referencji
+    🖍🆕 czlowiek 🍬📶🐚🙍🍆
+
+    🆕 🍇
+        😀 🔤 Wywołanie konstruktora - Psa 🔤❗️
+    🍉
+
+    ➡️🙍 nowy_czlowiek 🙍 🍇
+        💭 poprzednio występowała referencja cykliczna
+        💭 nowy_czlowiek ➡️ 🖍czlowiek
+
+        💭 zastosowanie słabej referencji
+        🆕📶nowy_czlowiek❗️ ➡️ 🖍czlowiek
+    🍉
+
+    ♻️ 🍇
+        😀 🔤 Wywołanie destruktora - Psa 🔤❗️
+    🍉
+
+🍉
+
+🏁🍇
+    🆕🙍 🆕🐶❗️ ❗️
+    💭 W programie odniesienie z psa z powrotem do człowieka
+    💭 nie liczy się przy określaniu, czy obiekt człowieka może zostać zniszczony.
+🍉

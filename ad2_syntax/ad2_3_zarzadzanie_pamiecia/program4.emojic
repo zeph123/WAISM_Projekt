@@ -1,0 +1,64 @@
+💭 Składnia języka Emojicode - Zarządzanie pamięcią
+
+💭 Niepoprawne działanie
+💭 Przykład uzyskiwania i przekazywania referencji do typu wartości
+💭 Przekazywanie referencji z jednej funkcji do innej funkcji
+
+🕊 💳 🍇
+    🖍🆕 imie 🔡
+    🖍🆕 nazwisko 🔡
+    🖍🆕 numer_karty 🔡
+    🖍🆕 data_waznosci 🔡
+    🖍🆕 kod_bezpieczenstwa 🔡
+
+    🆕 🍼 imie 🔡 🍼 nazwisko 🔡 🍼 numer_karty 🔡 🍼 data_waznosci 🔡 🍼 kod_bezpieczenstwa 🔡 🍇🍉
+
+    ❗️ 📙 🍇
+        😀 🔤 Dane karty płatniczej 🔤❗️
+        😀 🔤 Imie: 🧲imie🧲 🔤 ❗️
+        😀 🔤 Nazwisko: 🧲nazwisko🧲 🔤❗️
+        😀 🔤 Numer karty: 🧲numer_karty🧲 🔤❗️
+        😀 🔤 Data ważności: 🧲data_waznosci🧲 🔤❗️
+        😀 🔤 Kod bezpieczeństwa: 🧲kod_bezpieczenstwa🧲 🔤❗️
+    🍉
+🍉
+
+🕊 🙍 🍇
+    🖍🆕 imie 🔡
+    🖍🆕 nazwisko 🔡
+    🖍🆕 karta_platnicza 💳 
+
+    🆕 🍼 imie 🔡 🍼 nazwisko 🔡 🍼 karta_platnicza 💳 🍇🍉
+
+    ❗️ 🍳 ➡️ ✴️💳 🍇
+        ↩️ karta_platnicza
+    🍉
+
+    ❗️ 📙 🍇
+        😀 🔤 Dane klienta 🔤❗️
+        😀 🔤 Imie: 🧲imie🧲 🔤 ❗️
+        😀 🔤 Nazwisko: 🧲nazwisko🧲 🔤❗️
+    🍉
+
+    ❗️ 🍄 klient_banku 🙍 ➡️ ✴️💳 🍇
+        ☣️ 🍇
+            ↩️ 🍳 klient_banku ❗️
+        🍉
+    🍉
+🍉
+
+🏁 🍇
+
+    🆕💳 🔤Jan🔤 🔤Kowalski🔤 🔤8322978566104798🔤 🔤06/25🔤 🔤596🔤 ❗️ ➡️ karta_platnicza
+    🆕🙍 🔤Jan🔤 🔤Kowalski🔤 karta_platnicza ❗️ ➡️ klient_banku
+
+    📙 klient_banku ❗️
+    😀 🔤 🔤❗️
+
+    😀 🔤 Wywołanie funkcji zwracającej referencję 🔤❗️
+    📙 🍳 klient_banku ❗️ ❗️
+    😀 🔤 🔤❗️
+
+    😀 🔤 Wywołanie funkcji, która zwraca wywołanie funkcji zwracającej referencję 🔤❗️
+    📙 🍄 klient_banku ❗️ ❗️
+🍉
