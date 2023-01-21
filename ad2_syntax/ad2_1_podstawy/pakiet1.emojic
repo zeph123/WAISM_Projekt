@@ -1,0 +1,29 @@
+💭 Składnia języka Emojicode - Podstawy
+
+💭 Przykładowy pakiet
+💭🔜
+   Nazwa pakietu - functions
+   Importowanie pakietu za pomocą:
+   📦 functions 🏠
+🔚💭
+
+🌍 🐇 🧙‍♂️ 🍇
+
+   🖍🆕 liczba_A 🔢
+   🖍🆕 liczba_B 🔢
+   🖍🆕 suma 🔢 ⬅️ 0
+
+   🆕 🍼 liczba_A 🔢 🍼 liczba_B 🔢 🍇🍉
+
+   ❗️ 💧 🍇
+      0 ➡️ 🖍🆕 temp
+      temp ⬅️➕ liczba_A
+      temp ⬅️➕ liczba_B
+      temp ➡️ 🖍suma
+   🍉
+
+   ❗️ 🔥 🍇
+      😀 🔤🧲liczba_A🧲 + 🧲liczba_B🧲 = 🧲suma🧲🔤❗️
+   🍉
+
+🍉
