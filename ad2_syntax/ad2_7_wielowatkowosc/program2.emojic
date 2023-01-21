@@ -1,0 +1,24 @@
+💭 Składnia języka Emojicode - Wielowątkowość
+
+💭 Przykład kontroli sekcji krytycznej wykonywanego programu 
+💭 z zastosowaniem muteksu
+
+🏁 🍇
+    🆕🍨🐚🧵🍆❗️ ➡️ 🖍🆕watki
+
+    🆕🔐❗️ ➡️ mutex
+
+    🔂 i 🆕⏩ 0 3❗️ 🍇
+        🐻 watki 🆕🧵 🍇 🎍🥡
+            🔒 mutex❗️
+            😀 🔤Wątek 🧲i🧲: Instrukcja 1🔤❗️
+            😀 🔤Wątek 🧲i🧲: Instrukcja 2🔤❗️
+            😀 🔤Wątek 🧲i🧲: Instrukcja 3🔤❗️
+            🔓 mutex❗️
+        🍉❗️❗️
+    🍉
+
+    🔂 watek watki 🍇
+        🛂 watek❗️
+    🍉
+🍉

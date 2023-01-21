@@ -1,0 +1,20 @@
+💭 Składnia języka Emojicode - Wielowątkowość
+
+💭 Przykład utworzenia 3 wątków
+💭 Wszystkie wątki próbują wykonać się jednocześnie.
+
+🏁 🍇
+    🆕🍨🐚🧵🍆❗️ ➡️ 🖍🆕watki
+
+    🔂 i 🆕⏩ 0 3❗️ 🍇
+        🐻 watki 🆕🧵 🍇 🎍🥡
+            😀 🔤Wątek 🧲i🧲: Instrukcja 1🔤❗️
+            😀 🔤Wątek 🧲i🧲: Instrukcja 2🔤❗️
+            😀 🔤Wątek 🧲i🧲: Instrukcja 3🔤❗️
+        🍉❗️❗️
+    🍉
+
+    🔂 watek watki 🍇
+        🛂 watek❗️
+    🍉
+🍉
