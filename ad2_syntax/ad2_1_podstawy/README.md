@@ -309,7 +309,78 @@ $ ./program4
 
 # Porównanie do C++
 
-...
+## Plik źródłowy
 
+Porównując język Emojicode względem języka C++ w kwestii podstaw pierwszą cechą jaką można rozróżnić jest rozszerzenie z jakim zapisywane są pliki źródłowe. W języku C++ pliki mają rozszerzenie w postaci nazwa_pliku.cpp. 
+
+## Kompilacja i uruchomienie programu 
+
+Kolejnym aspektem jaki należy poruszyć jest to, że język Emojicode wykorzystywał kompilator i linker C++ - clang++ albo g++, dlatego też kompilacja i uruchamianie plików źródłowych odbywa się w podobny sposób jak w przypadku Emojicode.
+
+Kompilacja wraz z uruchomieniem pliku w C++ wygląda następująco:
+
+```
+Kompilacja przy wykorzystaniu kompilatora g++
+g++ -o nazwa_programu nazwa_pliku.cpp
+
+Uruchomienie skompilowanego programu
+./nazwa_programu
+```
+
+## Program wykonywalny
+
+Struktura programu wykonywalnego w C++ wygląda następująco:
+* w pierwszych linijkach kodu w pliku umieszcza się deklaracje bibliotek za pomocą słowa kluczowego #include nazwa_biblioteki umieszczona w <>,
+* następnie umieszczane są w programie użycia przestrzeni nazw (dyrektywy using), najbardziej podstawową i rozpoznawalną jest - using namespace std;
+* kolejno umieszcza się główną funkcję programu - int main()
+* po czym następuje część otwierająca program - {
+* dalej można umieścić instrukcje, właściwy kod programu,
+* przed samym końcem umieszcza się instrukcję - return 0; zwracającą liczbę całkowitą jako kod wyjścia,
+* na samym końcu następuje część zamykająca program - }
+
+```
+#include <iostream>
+// kolejne deklaracje używanych bibliotek, bądź plików nagłówkowych
+
+// użycie przestrzeni nazw std
+using namespace std;
+
+// główna funkcja programu
+int main()
+{ // klamra otwierająca program
+
+   // wyświetlenie tekstu
+   cout << "Hello world!" << endl;
+
+   // zwrócenie liczby całkowitej jako kod wyjścia z programu
+   return 0;
+
+} // klamra zamykająca program
+```
+
+## Pliki nagłówkowe 
+
+Analogicznie do pakietów występujących w języku Emojicode istnieje możliwość definiowania własnych plików źródłowych w języku C++, które stosowane są w tym samym celu jak w języku Emojicode.
+
+W jezyku C++ adekwatnie do pakietów wykorzystuje się pliki nagłówkowe (ang. header files) odpowiednio z rozszerzeniem *.h i *.hpp. Plik nagłówkowy z rozszerzeniem *.h oznacza, że plik jest zgodny ze standardami języka C, natomiast z rozszerzeniem *.hpp oznacza zgodność pliku ze standardami języka C++.
+
+Pliki nagłówkowe powinny zawierać jedynie deklaracje typów, funkcji, struktur, klas bądź ewentualnych zmiennych globalnych. Do plików nagłówkowych powinny zostać również dołączone inne niezbędne pliki nagłówkowe, jakie będą wykorzystywane przez daną bibliotekę. Warto zauważyć, że w pliku nagłówkowym nie powinno się umieszczać definicji funkcji, definicji zmiennych innych niż stałe (ang. const), definicji agregacji, nienazwanych przestrzeni nazw, bądź dyrektyw using.
+
+```
+// Nazwa pliku nagłówkowego nazwaPliku.hpp
+#ifndef nazwaPliku_HPP
+
+#define nazwaPliku_HPP
+
+// interfejs
+
+#endif
+```
+
+```
+Dołączanie pliku nagłówkowego
+
+#include "nazwaPliku.hpp"
+```
 
 Dokumentacja źródła: Welcome to Emojicode, Syntax, The Basics, Packages, Appendix: The Emojicode Compiler

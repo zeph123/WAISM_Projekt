@@ -134,7 +134,80 @@ Wraz ze sposobem jej obejścia, czyli zastosowanie słabej referencji w jednej z
 
 # Porównanie do C++
 
-...
+Jeśli chodzi o język C++ istnieją dwa podejścia zarządzania pamięcią:
+* statyczne - alokacja pamięci następuje przed rozpoczęciem wykonywania programu i istnieje aż do zakończenia wykonywania programu, pamięć jest zwalniana automatycznie po zakończeniu programu, wadą tego rozwiązania jest potrzeba wcześniejszego przewidzenia wielkości obszaru w pamięci jaki trzeba przydzielić,
+* dynamiczne - alokacja pamięci następuje w trakcie wykonywania programu za pomocą deklaracji zmiennych, bądź obiektów za pomocą operatora - new, i istnieje aż do momentu jej zwolnienia za pomocą użycia operatora - delete, zaletą tego rozwiązania jest możliwość dynamicznego rozszerzania przydzielonej pamięci w zależności od potrzeb.
+
+```
+Przykład statycznej alokacji pamięci:
+
+int tab[5];
+int suma = 0;
+```
+
+```
+Przykład dynamicznej alokacji pamięci i jej zwolnienia:
+
+int *wektor = new int[10];
+delete [] wektor;
+```
+
+Podobnie jak w jezyku Emojicode, w języku C++ można odwoływać się do adresu w pamięci określonej zmiennej, bądź obiektu. Jednakże język C++ wprowadza szersze możliwości operacji na adresach w pamięci.
+
+Język C++ wprowadza dwa sposoby odwoływania sie do adresu pamięci zmiennych:
+* poprzez referencje,
+* poprzez wskaźnik.
+
+Wskaźnik może wskazywać na jakąś zmienną, strukturę, tablicę a nawet funkcję. Jest niczym innym jak zmienną, która nie przechowuje wartości, tylko wskazuje na inną zmienną istniejącą w programie. 
+
+Wyróżnia się dwa podstawowe operatory niezbędne do operowania wskaźnikami:
+* operator * - wyłuskuje wartość zmiennej, na którą wskazuje wskaźnik (wyciąga wartość ze wskaźnika),
+* operator & - pobiera adresu określonej zmiennej.
+
+```
+Przykład deklaracji wskaźników:
+
+int liczba = 100;
+int *wsk = &liczba; // przypisanie wskaźnikowi adresu zmiennej liczba
+										         
+cout << *wsk << endl; // wyświetlenie wyłuskanej wartości wskaźnika - 100
+cout << wsk << endl; //wyświetlenie adresu zmiennej liczba
+cout << &wsk << endl; // wyświetlenie adresu wskaźnika
+```
+
+Referencja w swym działaniu przypomina wskaźniki. Różnica polega jednak na tym, że do referencji można przypisać adres tylko raz, a jej dalsze używanie niczym się nie różni od używania zwykłej zmiennej. Operacje jakie wykona się na zmiennej referencyjnej, zostaną odzwierciedlone na zmiennej zwykłej, z której pobrano adres.
+Warto zaznaczyć, że referencja zawsze musi odnosić się do określonej zmiennej, obiektu, nie jest możliwe zadeklarowanie referencji bez przypisania jej do żadnej zmiennej, bądź obiektu, oprócz tego warto wspomnieć, że raz przypisanej referencji do zmiennej nie można zmienić na inną zmienną.
+Dodatkowo istnieje możliwość zadeklarowania stałych referencji do zmiennych, obiektów, których następnie nie będzie można modyfikować.
+
+```
+Przykład deklaracji referencji:
+
+int i = 0;
+int &ref_i = i;
+cout << i;      // wypisze 0
+ref_i = 1;
+cout << i;      // wypisze 1
+cout << ref_i;  // wypisze 1
+```
+
+```
+Przykład błędnej deklaracj referencji:
+
+int a, b;
+int &ref_a = a, 
+    &ref_b = b;
+int &ref_c; // kompilator nie zezwoli na to - referencja niezainicjalizowana
+ref_b = &a; // kompilator nie zezwoli na to - nie można zmieniać przypisanej referencji do innej zmiennej
+```
+
+```
+Przykład deklaracji stałej referencji:
+
+int i = 0;
+const int &ref_i = i;
+cout << ref_i; // wypisze 0
+ref_i = 1;     // kompilator nie zezwoli na to - próba zmiany stałej referencji
+```
 
 # To bardziej odniesienie do 2.6. Programowanie obiektowe
 
