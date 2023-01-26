@@ -1,0 +1,130 @@
+
+💭 Notatka:
+💭 a ▶️ b // a jest większe niż b
+💭 a ▶️🙌 b // a jest większe lub równe b
+💭 a ◀️ b // a jest mniejsze niż b
+💭 a ◀️🙌 b // a jest mniejsze lub równe b
+
+🏁 🍇
+
+    💭🔜
+        Fibonacci (iteracyjnie) 
+        Na podstawie funkcji zaimplementowanej w C++:
+            💭 Fibonacci (iteracyjnie)
+            💭 int fib(int n) {
+            💭     int a = 0, b = 1, c, i;
+            💭     if( n == 0) {
+            💭         return a;
+            💭     }
+            💭     for(i = 2; i <= n; i++) {
+            💭         c = a + b;
+            💭         a = b;
+            💭         b = c;
+            💭     }
+            💭     return b;
+            💭 }
+        Opis:
+            Funkcja obliczająca wartość n-tego wyrazu ciągu Fibonacciego
+        Działanie:
+            - przyjmuje argument n-ty wyraz ciągu Fibonacciego,
+            - zwraca obliczoną wartość n-tego wyrazu ciągu Fibonacciego.
+    🔚💭
+
+    🍇 n 🔢 ➡️ 🔢
+
+        💭 int a = 0, b = 1, c, i;
+        0 ➡️ 🖍🆕 a
+        1 ➡️ 🖍🆕 b
+        0 ➡️ 🖍🆕 c
+
+        💭 if( n == 0) {
+        💭     return a;
+        💭 }
+        ↪️ n 🙌 0 🍇
+            ↩️ a
+        🍉
+        
+        💭 dodatkowa zmienna do pętli
+        n ➡️ 🖍🆕 stop
+        stop ⬅️➕ 1
+
+        💭 for(i = 2; i <= n; i++) {
+        🔂 i 🆕⏩ 2 stop 1❗️ 🍇
+
+            0 ➡️ 🖍c
+
+            💭 c = a + b;
+            c ⬅️➕ a
+            c ⬅️➕ b
+
+            💭 a = b;
+            b ➡️ 🖍a
+
+            💭 b = c;
+            c ➡️ 🖍b
+        🍉
+
+        💭 return b;
+        ↩️ b
+    
+    🍉 ➡️ fib_iteratively
+    
+    😀 🔤Fibonacci (iteracyjnie)🔤 ❗️
+    🔂 i 🆕⏩ 0 11 1❗️ 🍇
+        😀 🔤Fib(🧲🔡 i❗️🧲) = 🧲⁉️ fib_iteratively i ❗️🧲🔤 ❗️
+    🍉
+
+    💭🔜
+        Fibonacci (rekurencyjnie) 
+        Na podstawie funkcji zaimplementowanej w C++:
+            💭 Fibonacci (rekurencyjnie)
+            💭 int fib(int n) {
+            💭     if (n <= 1) {
+            💭         return n;
+            💭     }
+            💭     return fib(n - 1) + fib(n - 2);
+            💭 }
+        Opis:
+            Funkcja obliczająca wartość n-tego wyrazu ciągu Fibonacciego
+        Działanie:
+            - przyjmuje argument n-ty wyraz ciągu Fibonacciego,
+            - zwraca obliczoną wartość n-tego wyrazu ciągu Fibonacciego.
+    🔚💭
+
+    💭 🐇 🧙‍♂️ 🍇
+
+    💭     🆕 🍇🍉
+
+    💭     💭 niewiadomo dlaczego zwraca tutaj błąd
+    💭     💭 fib.emojic:102:18: 🚨 error: Unexpected token RightProductionOperator.
+    💭     💭 ❗️ 🔥 n 🔢 ➡️ 🔢 🍇
+    💭     💭          ⬆
+    💭     ❗️ 🔥 n 🔢 ➡️ 🔢 🍇
+            
+    💭         💭 if (n <= 1) {
+    💭         💭     return n;
+    💭         💭 }
+    💭         ↪️ n ◀️🙌 1 🍇
+    💭             ↩️ n
+    💭         🍉
+
+    💭         💭 fib(n - 1)
+    💭         n ➡️ 🖍🆕 n1
+    💭         n1 ⬅️➖ 1
+
+    💭         💭 fib(n - 2)
+    💭         n ➡️ 🖍🆕 n2
+    💭         n2 ⬅️➖ 2
+            
+    💭         💭 return fib(n - 1) + fib(n - 2);
+    💭         ↩️ 🔥👇 n1 ❗ ➕ 🔥👇 n2 ❗
+    💭     🍉
+    💭 🍉
+
+    💭 😀 🔤Fibonacci (rekurencyjnie)🔤 ❗️
+    💭 🆕🧙‍♂️❗️ ➡️ fib_recursively
+    💭 🔂 i 🆕⏩ 0 11 1❗️ 🍇
+    💭     😀 🔤Fib(🧲🔡 i❗️🧲) = 🧲🔥 fib_recursively i ❗️🧲🔤 ❗️
+    💭 🍉
+
+🍉
