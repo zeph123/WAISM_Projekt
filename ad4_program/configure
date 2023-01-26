@@ -1,0 +1,33 @@
+#!/bin/sh
+
+PURPLE='\033[0;36m'
+END='\033[0m'
+
+# install dependencies
+echo "\n${PURPLE}[+] Installing Emojicode dependencies\n${END}"
+sudo apt-get update -qq \
+    && sudo apt-get -y --no-install-recommends install \
+    build-essential \
+    ca-certificates \
+    g++ \
+    rsync \
+    wget \
+    libncurses5 
+
+# install Emojicode-1.0-beta.2-Linux-x86_64
+echo "\n${PURPLE}[+] Installing Emojicode-1.0-beta.2-Linux-x86_64\n${END}" 
+wget https://github.com/emojicode/emojicode/releases/download/v1.0-beta.2/Emojicode-1.0-beta.2-Linux-x86_64.tar.gz -O emojicode.tar.gz \
+&& tar -xzf emojicode.tar.gz \
+&& rm emojicode.tar.gz \
+&& cd Emojicode-1.0-beta.2-Linux-x86_64 \
+&& echo y | sudo ./install.sh || true \
+&& cd - \
+&& rm -r Emojicode-1.0-beta.2-Linux-x86_64
+
+# install additional dependencies
+# echo "\n${PURPLE}[+] Installing additional dependencies\n${END}"
+
+echo "\n${PURPLE}[!] Successfully configured!\n${END}"
+
+unset PURPLE
+unset END
